@@ -10,7 +10,7 @@ def count_key_letters(key, lst):
 
     # Végigmegyünk a lista elemein
     for item in lst:
-        # A kulcs betűinek száma
+        # A lista elemeinek hossza 
         if len(item) == 14:
             count = 0
 
@@ -37,7 +37,7 @@ def write_matches(Map):
     # Végigmegyünk a szótár kulcsain
     for key in Map:
         # Ha az egyezések száma 14, akkor kiírjuk az elemet a fájlba
-        if Map[key] == 14:
+        if Map[key] > 13:
             f.write(key + '\n')
 
     # Bezárjuk a fájlt
